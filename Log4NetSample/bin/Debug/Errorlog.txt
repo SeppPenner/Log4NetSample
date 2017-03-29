@@ -1,0 +1,2 @@
+2017-03-29 15:13:47,355 [1] INFO  Log4NetSample.Program [(null)] - Application is working
+2017-03-29 15:13:47,370 [1] ERROR Log4NetSample.Program [(null)] - New Error
