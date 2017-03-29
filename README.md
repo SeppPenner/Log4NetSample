@@ -1,4 +1,4 @@
-#Log4NetSample
+Log4NetSample
 ===============
 Log4NetSample is an example on how to use log4net to write to a log file.
 The example was written and tested in .Net 4.6.2.
