@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Program.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,30 +7,24 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Log4NetSample
+namespace Log4NetSample;
+
+/// <summary>
+/// The main program.
+/// </summary>
+public static class Program
 {
-    using System.Reflection;
-    using log4net;
+    /// <summary>
+    /// The logger.
+    /// </summary>
+    private static readonly ILog Logger = LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
 
     /// <summary>
     /// The main program.
     /// </summary>
-    // ReSharper disable once UnusedMember.Global
-    public static class Program
+    public static void Main()
     {
-        /// <summary>
-        /// The logger.
-        /// </summary>
-        private static readonly ILog Logger = LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
-        
-        /// <summary>
-        /// The main program.
-        /// </summary>
-        // ReSharper disable once UnusedMember.Global
-        public static void Main()
-        {
-            Logger.Info("Application is working.");
-            Logger.Error("New error.");
-        }
+        Logger.Info("Application is working.");
+        Logger.Error("New error.");
     }
 }
