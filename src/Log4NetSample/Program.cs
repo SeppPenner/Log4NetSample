@@ -17,7 +17,7 @@ public static class Program
     /// <summary>
     /// The logger.
     /// </summary>
-    private static readonly ILog Logger = LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType);
+    private static readonly ILog Logger = LogManager.GetLogger(MethodBase.GetCurrentMethod()?.DeclaringType ?? typeof(Program));
 
     /// <summary>
     /// The main program.
